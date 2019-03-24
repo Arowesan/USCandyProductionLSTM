@@ -26,14 +26,14 @@ In principle, a Bayesian network could be used
 to quantify the uncertainty of a single prediction
 from a neural network. However, such use of a model 
 is intractable. On the other hand, it has 
-been shown by Yarin Gal [1] that the use of dropouts 
+been shown by Yarin Gal that the use of dropouts 
 on a neural network leads to a Bayesian approximation 
 of the Gaussian process.
 
 To achieve this Bayesian approximation more precisely, 
 one carries out the usual (standard) 
 dropout approach during the training phase.
-During testing, one uses the so-called Monte Carlo (MC) dropout [1]
+During testing, one uses the so-called Monte Carlo (MC) dropout
 where a number of stochastic forward passes is carried out 
 in the model. It is important to note that the dropout probabilities 
 used during training phase are retained in MC dropout.
@@ -51,7 +51,7 @@ scipy.stats class.
 
 For the US Candy Production data set where a 
 Long Short-Term Memory (LSTM) layer is used in a recurrent
-neural network, one applies variational dropout [2] 
+neural network, one applies variational dropout 
 to achieve the same Bayesian approximation. 
 Fortunately this has already been implemented in the LSTM
 layer in Keras(^) but one needs to specify an input, 
