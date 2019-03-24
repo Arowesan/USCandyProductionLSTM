@@ -1,11 +1,11 @@
-Machine Learning exercise: Time Series and Uncertainty Estimate
+### Machine Learning exercise: Time Series and Uncertainty Estimate
 
 
 Task: Model the US Candy Production time series 
       using machine learning and compute uncertainty 
 	  of a single prediction.
 
-Prerequisites:
+## Prerequisites:
 - Python 3 
 - Keras with TensorFlow backend
 - numpy, scipy, sklearn
@@ -20,7 +20,7 @@ Alternatively, the program can be run on a python IDE so
 long as the above prerequisites are met.
   
 
-Uncertainty Estimate Implementation Explanation:
+## Uncertainty Estimate Implementation Explanation:
 
 In principle, a Bayesian network could be used
 to quantify the uncertainty of a single prediction
@@ -69,7 +69,7 @@ on line 136. Statistics calculations are then
 performed starting at line 152.
 
 
-Other notes and remarks about my solution:
+## Other notes and remarks about my solution:
 - The given US Candy Production time series has a small
   increasing trend. This trend was removed in order 
   to make the modeling easier. The trend is added back 
@@ -90,7 +90,7 @@ Other notes and remarks about my solution:
   wrap the code in a class.
 
 
-References:
+## References:
 
 [1] Y. Gal and Z. Gharamani, "Dropout as Bayesian Approximation:
     Representing Model Uncertainty in Deep Learning," arXiv:1506.02157, 2015.
