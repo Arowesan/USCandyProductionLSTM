@@ -14,7 +14,7 @@ Task: Model the US Candy Production time series
 
 On a terminal, run the program with the following command:
 
-   python USCandyProductionLSTM.py 
+   `python USCandyProductionLSTM.py`
    
 Alternatively, the program can be run on a python IDE so 
 long as the above prerequisites are met.
