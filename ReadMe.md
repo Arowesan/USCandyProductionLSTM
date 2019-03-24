@@ -40,8 +40,7 @@ used during training phase are retained in MC dropout.
 This then generates a sample of predictions for a 
 single input value, which allows one to 
 compute uncertainty estimates of this sample. Since it can be inferred that this sample from MC dropout 
-is approximately normally distributed, one could then compute  
-uncertainty estimates such as confidence interval 
+is approximately normally distributed, one could then compute uncertainty estimates such as confidence interval 
 with standard methods. My solution does MC dropout 
 on the entire test set but extracts one of them 
 and calculates statistics on it, including the 95% confidence 
