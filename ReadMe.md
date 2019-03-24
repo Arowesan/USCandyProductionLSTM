@@ -43,7 +43,7 @@ compute uncertainty estimates of this sample.
 Since it can be inferred that this sample from MC dropout 
 is approximately normally distributed, one could then compute  
 uncertainty estimates such as confidence interval 
-with standard methods. My solution (q2.py) does MC dropout 
+with standard methods. My solution does MC dropout 
 on the entire test set but extracts one of them 
 and calculates statistics on it, including the 95% confidence 
 interval where I used the 'norm.interval' method from the 
@@ -54,13 +54,13 @@ Long Short-Term Memory (LSTM) layer is used in a recurrent
 neural network, one applies variational dropout [2] 
 to achieve the same Bayesian approximation. 
 Fortunately this has already been implemented in the LSTM
-layer in Keras(*) but one needs to specify an input, 
+layer in Keras(^) but one needs to specify an input, 
 recurrent, and output dropout probabilities. 
 To implement MC dropout, one can define 
 a backend function in Keras that allows the use of
 the model which has the same dropout probabilities that were
 used from training. Note that the standard 'model.predict' method 
-in Keras does not include dropouts in the Sequential model(**). 
+in Keras does not include dropouts in the Sequential model(^^). 
 In the present code, this is defined as 'predict_stochastic' 
 and can be found on line 128. This function allows one to specify 
 which model to use based on the 'learning_phase' parameter
@@ -99,8 +99,8 @@ performed starting at line 152.
     Dropout in Recurrent Neural Networks," arXiv:1512.05287, 2015.
 
 -------
-(*) Interestingly Y. Gal helped with the implementation [2]. 
+(^) Interestingly Y. Gal helped with the implementation [2]. 
 
-(**) One can retain dropout probabilities in the standard 'model.predict' method 
+(^^) One can retain dropout probabilities in the standard 'model.predict' method 
 by using functional API to build the model and setting 'training=True' but I find 
 the MC dropout calculations with this approach very slow.
