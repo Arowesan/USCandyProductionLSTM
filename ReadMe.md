@@ -39,8 +39,7 @@ in the model. It is important to note that the dropout probabilities
 used during training phase are retained in MC dropout.
 This then generates a sample of predictions for a 
 single input value, which allows one to 
-compute uncertainty estimates of this sample. 
-Since it can be inferred that this sample from MC dropout 
+compute uncertainty estimates of this sample. Since it can be inferred that this sample from MC dropout 
 is approximately normally distributed, one could then compute  
 uncertainty estimates such as confidence interval 
 with standard methods. My solution does MC dropout 
