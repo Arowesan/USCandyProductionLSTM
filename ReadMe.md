@@ -12,7 +12,9 @@ Task: Model the US Candy Production time series
 - pandas
 - candy_production.csv (https://www.kaggle.com/rtatman/us-candy-production-by-month)
 
-On a terminal, run the program with the following command:
+Prototyping was done on the Jupyer notebook (USCandyProductionLSTM.ipynb). After being satisfied
+with the results I transferred the code into a single python file (USCandayProductionLSTM.py).
+This program can be run with the following command:
 
    `python USCandyProductionLSTM.py`
    
