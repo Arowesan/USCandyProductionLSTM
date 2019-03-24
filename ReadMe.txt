@@ -1,4 +1,5 @@
-Problem 2: Machine Learning 
+Machine Learning exercise: Time Series and Uncertainty Estimate
+
 
 Task: Model the US Candy Production time series 
       using machine learning and compute uncertainty 
