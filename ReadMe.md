@@ -85,9 +85,7 @@ performed starting at line 152.
   my test predictions with this data set, which is about 0.996 from 
   using the standard model.predict method.
   For MC dropout a somewhat better value of 0.998 was obtained.
-- The structure of this code is for demonstration purposes. 
-  For software development, I would actually
-  wrap the code in a class.
+
 
 
 ## References:
