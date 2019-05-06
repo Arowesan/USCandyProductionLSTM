@@ -1,4 +1,4 @@
-### Machine Learning exercise: Time Series and Uncertainty Estimate
+# Machine Learning exercise: Time Series and Uncertainty Estimate
 
 
 Task: Model the US Candy Production time series 
