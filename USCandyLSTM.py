@@ -1,5 +1,5 @@
 """
-@file: q2.py
+@file: USCandyLSTM.py
 @language: Python 3.6.6
 @author: Anthony Leung (leungant@yorku.ca)
 """
